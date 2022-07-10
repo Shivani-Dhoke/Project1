@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up form</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Festive&family=Macondo&family=Mingzat&family=Splash&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Shiv Fitness Gym</h1>
+            <h3>Sign Up Form</h3>
+            <hr>
+
+            <div class="mygroup">
+                <input type="text" name="myName" placeholder="Enter Your Name" required>
+            </div>
+            <div class="mygroup">
+                <input type="Email" name="myEmail" placeholder="Enter Your Email-Id" required>
+            </div>
+            <div class="mygroup">
+                <input type="text" name="myaddress" placeholder="Enetr Your Address" required>
+            </div>
+            <div class="mygroup">
+                <input type="number" name="myNumber" placeholder="Your Moile No." min="0" max="12" required>
+            </div>
+            
+            <div class="mygroup">
+                 <input type="password" name="myPassword" id="password"
+                    placeholder="Enter Your Password" required>
+            </div>
+            <div class="mygroup">
+                <input type="password" name="myPassword" id="confirmpassword" 
+                    placeholder="Confirm Your Password" required>
+            </div>
+            <div class="mygroup">
+                <select name="myGender" class="mygender" id="gender1" placeholder="Gender">
+                    <option class="mygender" value="" disabled selected>Gender</option>
+                    <option class="mygender"value="Female">Female</option>
+                    <option class="mygender" value="Male">Male</option>
+                </select>
+            </div>
+            <div>
+                <button class="btn">Sign Up</button>
+                <input type="reset" class="rst" value="Reset">
+            </div><hr>
+            <footer id="myfoot">Already have an account? <a href="login.html"><u>Login here</u></a></footer>
+        </form>
+    </div>
+</body>
+</html>

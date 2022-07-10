@@ -1,0 +1,78 @@
+.container{
+    /* background-color: rgb(229, 118, 118); */
+    /* border: 2px solid black; */
+    margin:100px 80px ;
+    padding: 75px;
+    width: 28%;
+    border-radius: 8px;
+}
+
+.mygroup input {
+    /* float: right; */
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    width: 500px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.mygender{
+    text-align: center;
+    display: block;
+    width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+
+#myfoot {
+    text-align: center;
+    font-size: 27px;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: url('bg.jpg');
+    margin: 0px;
+    /* padding: 0px; */
+    color: white;
+}
+
+.btn {
+
+    display: block;
+    margin: 30px auto;
+    color: black;
+    background-color: skyblue;
+    padding: 20px;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    /* text-align: center; */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: brown;
+    background-color: aquamarine;
+}
+
+h1, h3 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    display: block;
+}
+.rst{
+    display: block;
+    width: 500px ;
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
