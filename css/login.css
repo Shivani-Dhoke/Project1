@@ -1,0 +1,79 @@
+.nav1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+}
+.nav1 i{
+    padding: 20px;
+    font-size: 30px;
+    color: green;
+    border: 1px solid green;
+    box-shadow: 2px 4px 4px white;
+    text-shadow: 2px 2px white;
+}
+
+.nav1 a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 15px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.nav1 .btn1{
+    font-size: 25px;
+    width: 10px 80px;
+    color: black;
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+}
+.item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1,
+h3 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    display: block;
+}
+
+.container{
+    margin:100px 280px ;
+    padding: 75px;
+    width: 28%;
+    /* border-radius: 8px; */
+    /* border: 2px solid black; */
+}
+body{
+    background-image: url('/images/bg.jpg');
+}
+.myform input{
+    text-align: center;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    width: 550px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 8px auto;
+    border-radius: 10px;
+}
+.btn{
+
+    margin: 8px 263px;
+    color: white;
+    background-color: green;
+    padding: 4px 14px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}

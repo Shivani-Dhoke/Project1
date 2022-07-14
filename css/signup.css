@@ -1,26 +1,72 @@
-.container{
+.nav1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+    width: 100%;
+}
+
+.nav1 i {
+    padding: 20px;
+    font-size: 30px;
+    color: green;
+    border: 1px solid green;
+    box-shadow: 2px 4px 4px white;
+    text-shadow: 2px 2px white;
+}
+
+.nav1 a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 15px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.nav1 .btn1 {
+    font-size: 25px;
+    width: 10px 80px;
+    color: black;
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+
+.container {
     /* background-color: rgb(229, 118, 118); */
     /* border: 2px solid black; */
-    margin:100px 80px ;
+    margin: 100px 80px;
     padding: 75px;
+    /* width: 100%; */
     width: 28%;
     border-radius: 8px;
+}
+
+.item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .mygroup input {
     /* float: right; */
     font-size: 25px;
     text-align: center;
-    display: block;
+    /* display: block; */
     width: 500px;
     padding: 20px;
     border: 2px solid black;
     margin: 30px auto;
     border-radius: 10px;
 }
-.mygender{
+
+.mygender {
     text-align: center;
-    display: block;
+    /* display: block; */
     width: 500px;
     margin: 30px auto;
     padding: 20px;
@@ -33,6 +79,7 @@
     text-align: center;
     font-size: 27px;
 }
+
 body {
     font-family: 'Ubuntu', sans-serif;
     background: url('/images/bg.jpg');
@@ -43,7 +90,10 @@ body {
 
 .btn {
 
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 30px auto;
     color: black;
     background-color: skyblue;
@@ -62,15 +112,16 @@ body {
     background-color: aquamarine;
 }
 
-h1, h3 {
+h1,
+h3 {
     text-align: center;
     font-weight: bold;
     color: white;
     display: block;
 }
-.rst{
-    display: block;
-    width: 500px ;
+
+.rst {
+    width: 500px;
     margin: 30px auto;
     padding: 20px;
     font-size: 20px;
