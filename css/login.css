@@ -1,3 +1,6 @@
+body{
+    background-image: url('/images/bg.jpg');
+}
 .nav1{
     display: flex;
     justify-content: space-around;
@@ -51,9 +54,7 @@ h3 {
     /* border-radius: 8px; */
     /* border: 2px solid black; */
 }
-body{
-    background-image: url('/images/bg.jpg');
-}
+
 .myform input{
     text-align: center;
     font-size: 25px;
