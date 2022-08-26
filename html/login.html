@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,40 @@
     <title>Login form</title>
     <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Festive&family=Macondo&family=Mingzat&family=Splash&family=Ubuntu:wght@300&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Festive&family=Macondo&family=Mingzat&family=Splash&family=Ubuntu:wght@300&display=swap">
 </head>
+
 <body>
     <nav class="nav1">
         <i class="fa-solid fa-dumbbell">Shiv Fitness</i>
         <nav class="item">
-        <a href="#">Home</a>
-        <a href="#">Diet Chart</a>
-        <a href="#">About us</a>
-        <a href="#">Contact Us</a>
+            <a href="#">Home</a>
+            <a href="#">Diet Chart</a>
+            <a href="#">About us</a>
+            <a href="#">Contact Us</a>
         </nav>
         <button class="btn1">Call- +123-4564536445623456</button>
     </nav>
     <div class="container">
         <form action="">
             <h1>Shiv Fitness Gym</h1>
-                <h3>Sign Up Form</h3>
-                <hr>
-                <div class="item1">
-            <div class="myform">
-            <input type="email" name="myemail" placeholder="Enter Email-Id" required>
-            </div><br>
-            <div class="myform">
-                <input type="password" name="mypassword" placeholder="Enter Your Password" requird>
-            </div><br>
-            <button class="btn">Login</button>
+            <h3>Sign Up Form</h3>
+            <hr>
+            <div class="item1">
+                <div class="myform">
+                    <input type="email" name="myemail" placeholder="Enter Email-Id" id="useremail" required>
+                </div><br>
+                <div class="myform">
+                    <input type="password" name="mypassword" placeholder="Enter Your Password" id="userpw" requird>
+                </div><br>
+                <button class="btn" onclick="check()">Login</button>
             </div>
         </form>
     </div>
-    
+
+    <script src="/script/main.js"></script>
+
 </body>
+
 </html>

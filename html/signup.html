@@ -30,17 +30,19 @@
                 <div class="item1">
 
                     <div class="mygroup">
-                        <input type="text" name="myName" placeholder="Enter Your Name" required>
+                        <input type="text" name="myName" placeholder="Enter Your Name" id="name" autocomplete="off" required>
+                        <span id="username"></span>
+
                     </div>
                     <div class="mygroup">
-                        <input type="Email" name="myEmail" placeholder="Enter Your Email-Id" required>
+                        <input type="Email" name="myEmail" placeholder="Enter Your Email-Id" id="email" autocomplete="off" required>
                     </div>
                     <div class="mygroup">
-                        <input type="text" name="myaddress" placeholder="Enetr Your Address" required>
+                        <input type="password" name="mypassword" placeholder="Enter Your Password" id="pw" autocomplete="off" requird>
                     </div>
-                    <div class="mygroup">
-                        <input type="number" name="myNumber" placeholder="Your Moile No." min="0" max="13" required>
-                    </div>
+                    <!-- <div class="mygroup">
+                        <input type="number" name="myNumber" placeholder="Your Moile No." min="0" max="10" required>
+                    </div> -->
                     <div class="mygroup">
                         <select name="myGender" class="mygender" id="gender1" placeholder="Gender">
                             <option class="mygender" value="" disabled selected>Gender</option>
@@ -49,8 +51,7 @@
                         </select>
                     </div>
                     <div>
-                        <button class="btn">Sign Up</button>
-                        <input type="reset" class="rst" value="Reset">
+                        <button class="btn" onclick="store()">Sign Up</button>
                     </div>
                 </div>
                 <hr>
@@ -58,6 +59,7 @@
             </form>
         </div>
     </div>
+    <script src="/script/main.js"></script>
 </body>
 
 </html>

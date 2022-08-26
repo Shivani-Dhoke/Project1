@@ -5,6 +5,10 @@ body {
     /* padding: 0px; */
     color: white;
 }
+span{
+    color: red;
+    font-size: 10px;
+}
 .nav1 {
     display: flex;
     justify-content: space-around;
