@@ -1,59 +1,44 @@
 function store() {
-    var email = document.getElementById('email');
-    var pw = document.getElementById('pw');
-    // var number = '';
-    // var lowerCaseLetter = '';
-    // var upperCaseLetter = '';
-    var atposition = "@";
-    var dotposition = ".";
+    let name = document.getElementById('name')
+    let email = document.getElementById('email');
+    let password = document.getElementById('password');
 
-    if (email.value.length == 0) {
+    let atposition = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+    let passPosition = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+
+    if(name.value.length === 0){
+        alert("Please fill in name")
+    }
+    else if (email.value.length === 0) {
         alert("Please fill in email")
     }
     else if (!email.value.match(atposition)) {
-        alert("Please enter '@' in email")
-    }
-    else if (!email.value.match(dotposition)) {
-        alert("Please enter '.' in email")
+        alert("Please enter correct email, eg.,abc@gmail.com")
     }
 
-    else if (pw.value.length == 0) {
+    else if (password.value.length === 0) {
         alert("Please fill in password")
     }
-
-    else if (pw.value.length < 8) {
-        alert("Password must be at least 8 character long")
+    else if (!password.value.match(passPosition)) {
+        alert("Please enter strong password, eg.,Pq8#12rs")
     }
-    else if (email.value.length == 0 && pw.value.length == 0) {
-        alert("Please fill in email & password")
-    }
-    // else if(!pw.value.match(number)){
-    //     alert("Please add atleast one number")
-    // }
-    // else if(!pw.value.match(upperCaseLetter)){
-    //     alert("Please add atleast one Uppercase Letter")
-    // }
-    // else if(!pw.value.match(lowerCaseLetter)){
-    //     alert("Please add atleast one Lowercase Letter")
-    // }
-
     else {
         localStorage.setItem('email', email.value);
-        localStorage.setItem('pw', pw.value);
+        localStorage.setItem('password', password.value);
         alert("Successfully created an account");
     }
 
-}
+};
 
 function check() {
     var checkedEmail = localStorage.getItem('email');
-    var checkedPw = localStorage.getItem('pw');
+    var checkedPassword = localStorage.getItem('password');
 
     var userEmail = document.getElementById('useremail');
-    var userPw = document.getElementById('userpw');
+    var userPassword = document.getElementById('userpassword');
 
 
-    if (userEmail.value == checkedEmail && userPw.value == checkedPw) {
+    if (userEmail.value === checkedEmail && userPassword.value === checkedPassword) {
         alert("Successfully logged in");
     }
     else {
